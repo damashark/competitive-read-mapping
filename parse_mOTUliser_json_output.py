@@ -8,6 +8,7 @@
 # parse_mOTUliser_json_output.py [file from mOTUlize.py] [name for output files, no extensions]
 # For example, $ parse_mOTUliser_json_output.py Thaum_mOTUlize_output.txt Thaum_mOTUs 
 #		produces the files "Thaum_mOTUs_info.txt" and "Thaum_mOTUs_table.txt"
+#
 
 import sys
 import json
