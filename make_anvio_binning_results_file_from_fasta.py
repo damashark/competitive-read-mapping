@@ -13,7 +13,7 @@ This script was designed to work when mapping reads to a database containing MAN
 	to summarize mapped reads with anvi'o.
 Use this for mapping to genomes but not for binning itself...
 
-Note, this script is written with python2 (2.7.16 at last count) and has yet to be converted to python3 :(
+Requires python3 (last tested with 3.10.13)
 
 Usage:
   > make_anvio_binning_results_file_from_fasta.py [fasta file]
@@ -26,7 +26,7 @@ from Bio import SeqIO
 
 #user input of fasta file to count
 if len(sys.argv)<1:
-	print Usage	
+	print(Usage)	
 else:
 	ffile = sys.argv[1]
 
@@ -43,4 +43,4 @@ for r in SeqIO.parse(fas, "fasta"):
 fas.close()
 outfile.close()
 
-print "Saved %i sequence names to %s" % (counter, outfilename)
+print("Saved %i sequence names to %s" % (counter, outfilename))
