@@ -10,7 +10,7 @@
 # make_mOTU_binning_results_file.py [contigs.txt file] [mOTUs _table.txt file] [prefix]
 #
 # Requires python3 (last tested with 3.10.13)
-#
+
 
 import sys
 import re
